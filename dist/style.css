@@ -39,7 +39,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 40em;
+    max-width: 640px;
+    max-height: 892px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -47,7 +50,7 @@ body {
   margin-top: 80px;
   font-weight: 700;
   font-size: var(--fs-med);
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   text-transform: uppercase;
 }
 @media (min-width: 40em) {
@@ -72,7 +75,7 @@ body {
     float: left;
     margin: 0;
     padding: 0;
-    min-width: 421px;
+    width: 421px;
   }
 }
 
@@ -129,6 +132,11 @@ input::placeholder {
     align-items: center;
   }
 }
+.btn-primary:hover {
+  background-color: #4f7df3;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
 
 .img img {
   display: block;
@@ -147,7 +155,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.6875rem;
+  margin-bottom: 1.5625rem;
 }
 
 .facebook {
@@ -300,8 +308,11 @@ form {
     font-size: var(--fs-sm);
     text-align: left;
     margin-left: 2rem;
-    display: block;
   }
+}
+
+footer {
+  margin-bottom: 37px;
 }
 
 :root {
