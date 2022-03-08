@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    font-family: var(--ff-primary) ;
+    text-align: center;
+    line-height: 1.25;
+}
+
+.content {
+    margin-top: 4.875rem;
+    max-width: 18.875rem;
+    margin-right: auto;
+    margin-left: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (min-width:40em)  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 39em;
+        max-height: 55.5625em; 
+         
+          
+    }
+
+    
+}
+
+.header {
+    &__logo {
+        font-weight: 700;
+        font-size: var(--fs-med);
+        margin-bottom: 2em;
+        text-transform: uppercase;
+
+        @media (min-width:40em)  {
+            margin-bottom: 2.5rem;
+                 
+        }
+        
+
+    }
+
+    
+  
+ 
+    
+}
+
+
+.form-control {
+    border: none; 
+    position: relative; 
+    margin: 0;
+    padding: 0;   
+}
+.form-control label {
+    display: inline-block;
+    @media (min-width:40em)  {
+        float: left; 
+        margin: 0;
+        padding: 0;
+        min-width: 421px; 
+                
+    }
+      
+}
+.form-control input {
+    border: 1px solid  hsl(223, 100%, 88%); 
+    border-radius: 30px;
+    height: 40px; 
+    margin-bottom: 0.125rem;
+    width: 281px;
+
+
+    @media (min-width:40em)  {
+        width: 100%;
+        margin: 0;
+        height: 56px; 
+        font-size: var(--fs-base);
+        grid-column: 1/3;     
+    }
+    
+}
+
+.form-control.error input {
+    border-color:#e74c3c;
+    
+}
+
+input::placeholder {
+    opacity: .3;
+    font-size: var(--fs-base);
+}
+
+.btn-primary{
+    margin-bottom: 4.5rem;
+    font-size: var(--fs-sm);
+    padding: 0.625rem 0 0.625rem 0;
+    max-width: 281px; 
+    height: 40px;
+    
+
+    @media (min-width:40em)  {
+        grid-column: 2/3;
+        margin: 0;
+        width:  200px;
+        height: 56px;
+        font-size: var(--fs-base);
+        align-items: center;    
+    }
+}
+
+
+.img {
+    img {
+    display: block;
+    width: 100%;
+    margin-bottom: 7.5rem;
+    }
+
+      
+    
+
+    @media (min-width:50em){
+        max-width: 640px;
+        max-height: 383px;
+        padding: 0 36px;
+             
+    } 
+    
+    @media (min-width:40em){
+        max-width: 640px;
+        max-height: 383px;
+        padding: 0 36px;
+          
+    } 
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.6875rem;
+}
+
+.facebook {
+    color: #1947b9;
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px hsl(223, 100%, 88%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    
+}
+
+.twitter {
+    color: #1947b9;
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px hsl(223, 100%, 88%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+}
+
+.twitter:hover {
+
+    @media (min-width:40em){
+        background-color: hsl(223, 87%, 63%);
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    } 
+    
+}
+
+.fa-twitter:hover {
+
+    @media (min-width:40em){
+        color: white;
+        transition: all 0.5s ease-in-out 
+          
+    } 
+    
+}
+.instagram {
+    color: #1947b9;
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px hsl(223, 100%, 88%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.legal {
+    font-size: var(--fs-xs);
+}
+
+.form-control {
+    @media (min-width: 40em){
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 1.5fr .7372fr ;
+        
+       
+        
+           
+    }  
+    
+    .left {
+        grid-column: 1/2;
+        
+    }
+
+    .right {
+        grid-column: 2/3;
+    
+    }
+
+    grid-col-span-2 {
+        grid-column: span 2;
+    }
+}
+
+.footer {
+
+    @media (min-width:50em) {
+        margin-bottom: 3.1rem;
+            
+    }
+    
+}
