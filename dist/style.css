@@ -19,10 +19,12 @@ body {
   font-family: var(--ff-primary);
   text-align: center;
   line-height: 1.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
-  margin-top: 4.875rem;
   max-width: 18.875rem;
   margin-right: auto;
   margin-left: auto;
@@ -37,8 +39,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 39em;
-    max-height: 55.5625em;
+    max-width: 40em;
+    max-height: 55.575em;
   }
 }
 
@@ -51,6 +53,7 @@ body {
 @media (min-width: 40em) {
   .header__logo {
     margin-bottom: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -77,7 +80,7 @@ body {
   border: 1px solid #c2d3ff;
   border-radius: 30px;
   height: 40px;
-  margin-bottom: 0.125rem;
+  padding: 0.625rem 8.4375rem 0.625rem 2rem;
   width: 281px;
 }
 @media (min-width: 40em) {
@@ -96,17 +99,17 @@ body {
 
 input::-moz-placeholder {
   opacity: 0.3;
-  font-size: var(--fs-base);
+  font-size: var(--fs-sm);
 }
 
 input:-ms-input-placeholder {
   opacity: 0.3;
-  font-size: var(--fs-base);
+  font-size: var(--fs-sm);
 }
 
 input::placeholder {
   opacity: 0.3;
-  font-size: var(--fs-base);
+  font-size: var(--fs-sm);
 }
 
 .btn-primary {
@@ -134,16 +137,9 @@ input::placeholder {
 }
 @media (min-width: 50em) {
   .img {
-    max-width: 640px;
-    max-height: 383px;
-    padding: 0 36px;
-  }
-}
-@media (min-width: 40em) {
-  .img {
-    max-width: 640px;
-    max-height: 383px;
-    padding: 0 36px;
+    width: 640px;
+    height: 383px;
+    margin-bottom: 4.5rem;
   }
 }
 
@@ -296,13 +292,15 @@ form {
 #error {
   font-size: var(--fs-xs);
   color: #cc3120;
-  margin-bottom: 0.5rem;
+  display: block;
+  margin-bottom: 0.625rem;
 }
 @media (min-width: 40em) {
   #error {
     font-size: var(--fs-sm);
     text-align: left;
     margin-left: 2rem;
+    display: block;
   }
 }
 

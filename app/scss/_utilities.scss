@@ -42,9 +42,11 @@ input {
     font-size: var(--fs-sm);
     padding: 0.625rem 8.4375rem 0.625rem 2rem;
     max-width: 421px;
+    
 
     @media (max-width:30em)  {
         max-width: 281px;
+       
         
             
     }
@@ -65,15 +67,20 @@ form {
 #error {
     font-size: var(--fs-xs);
     color: #cc3120;
-    margin-bottom: .5rem;
+    display: block;
+    margin-bottom: 0.625rem;
+
+    
    
 
     @media (min-width:40em)  {
         font-size:var(--fs-sm);
         text-align: left;
         margin-left: 2rem;
+        display: block;
 
       
     }
 
 }
+
